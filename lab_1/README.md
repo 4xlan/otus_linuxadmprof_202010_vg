@@ -18,8 +18,11 @@
 Конфигурационные файлы:
 
 [Vagrantfile](./cfg/Vagrantfile)
+
 [Kernel update script](./cfg/scripts/1_kernel_update.sh)
+
 [Packer](./cfg/centos.json)
+
 [Anaconda](./cfg/http/vagrant.ks)
 
 ---
