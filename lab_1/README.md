@@ -13,13 +13,15 @@
 
 Ссылки:
 
-[Vagrant Cloud.](https://app.vagrantup.com/4xlan/boxes/centos-8-5)
+[Vagrant Cloud](https://app.vagrantup.com/4xlan/boxes/centos-8-5)
 
 Конфигурационные файлы:
 
 [Vagrantfile](./cfg/Vagrantfile)
 
-[Kernel update script](./cfg/scripts/1_kernel_update.sh)
+[Скрипт обновления ядра](./cfg/scripts/1_kernel_update.sh)
+
+[Скрипт очистки системы](./cfg/scripts/2_clean.sh)
 
 [Packer](./cfg/centos.json)
 
