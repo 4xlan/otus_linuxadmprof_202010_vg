@@ -60,7 +60,8 @@
       "override": {
         "{{user `image_name`}}": {
           "scripts": [
-            "scripts/1_kernel_update.sh"
+            "scripts/1_kernel_update.sh",
+            "scripts/2_clean.sh"
           ]
         }
       },

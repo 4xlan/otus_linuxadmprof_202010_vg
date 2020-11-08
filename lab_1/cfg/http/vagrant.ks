@@ -10,7 +10,7 @@ network --onboot yes --bootproto=dhcp --device=eth0 --activate --noipv6
 rootpw vagrant
 # authconfig --enableshadow --passalgo=sha512
 authselect --enableshadow --passalgo=sha512
-user --name=vagrant --groups=vagrant --password=vagrant
+user --name=vagrant --password=vagrant
 
 firewall --disabled
 selinux --disabled
@@ -29,6 +29,8 @@ autopart
 reboot
 
 %packages
+# authconfig
+authselect
 @Core
 openssh-clients
 openssh-server
@@ -55,9 +57,8 @@ UseDNS no
 UsePAM no
 GSSAPIAuthentication no
 ChallengeResponseAuthentication no
+PubkeyAuthentication yes
 
 EOF_sshd_config
-
-useradd -p vagrant -g vagrant vagrant
 
 %end

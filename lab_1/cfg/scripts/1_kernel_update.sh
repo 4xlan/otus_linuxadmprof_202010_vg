@@ -5,4 +5,3 @@ yum install -y --enablerepo=elrepo-kernel kernel-ml
 mv /boot/grub2/grub.cfg /boot/grub2/grub.cfg.bckp
 grub2-mkconfig -o /boot/grub2/grub.cfg
 grub2-set-default 0
-shutdown -r 0
