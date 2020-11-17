@@ -64,6 +64,7 @@ Vagrant.configure("2") do |cfg|
           SHELL
           
           box.vm.provision :shell, path: "scripts/1_raid_init.sh"
+          box.vm.provision :shell, path: "scripts/2_mount_on_start.sh", run: "always"
       end
   end
 end
