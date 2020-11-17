@@ -16,7 +16,9 @@
 [Vagrantfile](./cfg/Vagrantfile)
 
 [Скрипт развертывания сервера](./cfg/scripts/nfss_script.sh)
+
 [Скрипт развертывания клиента](./cfg/scripts/nfsc_script.sh)
+
 [Systemd mount file](./cfg/files/mnt-share.mount)
 
 
