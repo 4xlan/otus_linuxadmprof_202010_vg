@@ -1,0 +1,273 @@
+Script started on 2020-11-24 11:32:29-05:00
+]0;root@localhost:~[root@localhost ~]# mkiun[K[Knitrd -f -v /boot/initramfs-$(uname-[K -r).img ([K$(uname -r)
+Creating: target|kernel|dracut args|basicmodules 
+dracut: Executing: /usr/bin/dracut -v -f /boot/initramfs-4.18.0-193.el8.x86_64.img 4.18.0-193.el8.x86_64
+dracut: dracut module 'modsign' will not be installed, because command 'keyctl' could not be found!
+dracut: dracut module 'busybox' will not be installed, because command 'busybox' could not be found!
+dracut: dracut module 'btrfs' will not be installed, because command 'btrfs' could not be found!
+dracut: dracut module 'dmraid' will not be installed, because command 'dmraid' could not be found!
+dracut: dracut module 'mdraid' will not be installed, because command 'mdadm' could not be found!
+dracut: dracut module 'stratis' will not be installed, because command 'stratisd-init' could not be found!
+dracut: dracut module 'cifs' will not be installed, because command 'mount.cifs' could not be found!
+dracut: dracut module 'iscsi' will not be installed, because command 'iscsi-iname' could not be found!
+dracut: dracut module 'iscsi' will not be installed, because command 'iscsiadm' could not be found!
+dracut: dracut module 'iscsi' will not be installed, because command 'iscsid' could not be found!
+dracut: 95nfs: Could not find any command of 'rpcbind portmap'!
+dracut: dracut module 'modsign' will not be installed, because command 'keyctl' could not be found!
+dracut: dracut module 'busybox' will not be installed, because command 'busybox' could not be found!
+dracut: dracut module 'btrfs' will not be installed, because command 'btrfs' could not be found!
+dracut: dracut module 'dmraid' will not be installed, because command 'dmraid' could not be found!
+dracut: dracut module 'mdraid' will not be installed, because command 'mdadm' could not be found!
+dracut: dracut module 'stratis' will not be installed, because command 'stratisd-init' could not be found!
+dracut: dracut module 'cifs' will not be installed, because command 'mount.cifs' could not be found!
+dracut: dracut module 'iscsi' will not be installed, because command 'iscsi-iname' could not be found!
+dracut: dracut module 'iscsi' will not be installed, because command 'iscsiadm' could not be found!
+dracut: dracut module 'iscsi' will not be installed, because command 'iscsid' could not be found!
+dracut: 95nfs: Could not find any command of 'rpcbind portmap'!
+dracut: *** Including module: bash ***
+dracut: *** Including module: systemd ***
+dracut: *** Including module: systemd-initrd ***
+dracut: *** Including module: rngd ***
+dracut: *** Including module: i18n ***
+dracut: *** Including module: network-legacy ***
+dracut: *** Including module: network ***
+dracut: *** Including module: ifcfg ***
+dracut: *** Including module: prefixdevname ***
+dracut: *** Including module: dm ***
+dracut: Skipping udev rule: 64-device-mapper.rules
+dracut: Skipping udev rule: 60-persistent-storage-dm.rules
+dracut: Skipping udev rule: 55-dm.rules
+dracut: *** Including module: kernel-modules ***
+dracut: *** Including module: kernel-modules-extra ***
+dracut: *** Including module: kernel-network-modules ***
+dracut: *** Including module: lvm ***
+dracut: Skipping udev rule: 64-device-mapper.rules
+dracut: Skipping udev rule: 56-lvm.rules
+dracut: Skipping udev rule: 60-persistent-storage-lvm.rules
+dracut: *** Including module: resume ***
+dracut: *** Including module: rootfs-block ***
+dracut: *** Including module: terminfo ***
+dracut: *** Including module: udev-rules ***
+dracut: Skipping udev rule: 91-permissions.rules
+dracut: Skipping udev rule: 80-drivers-modprobe.rules
+dracut: *** Including module: biosdevname ***
+dracut: *** Including module: dracut-systemd ***
+dracut: *** Including module: usrmount ***
+dracut: *** Including module: base ***
+dracut: *** Including module: fs-lib ***
+dracut: *** Including module: microcode_ctl-fw_dir_override ***
+dracut:   microcode_ctl module: mangling fw_dir
+dracut:     microcode_ctl: reset fw_dir to "/lib/firmware/updates /lib/firmware"
+dracut:     microcode_ctl: processing data directory  "/usr/share/microcode_ctl/ucode_with_caveats/intel"...
+intel: model '', path ' intel-ucode/*', kvers ''
+intel: blacklist ''
+dracut:     microcode_ctl: intel: Host-Only mode is enabled and "intel-ucode/06-9e-0a" matches "intel-ucode/*"
+dracut:       microcode_ctl: intel: caveats check for kernel version "4.18.0-193.el8.x86_64" passed, adding "/usr/share/microcode_ctl/ucode_with_caveats/intel" to fw_dir variable
+dracut:     microcode_ctl: processing data directory  "/usr/share/microcode_ctl/ucode_with_caveats/intel-06-2d-07"...
+intel-06-2d-07: model 'GenuineIntel 06-2d-07', path ' intel-ucode/06-2d-07', kvers ''
+intel-06-2d-07: blacklist ''
+intel-06-2d-07: caveat is disabled in configuration
+dracut:     microcode_ctl: kernel version "4.18.0-193.el8.x86_64" failed early load check for "intel-06-2d-07", skipping
+dracut:     microcode_ctl: processing data directory  "/usr/share/microcode_ctl/ucode_with_caveats/intel-06-4f-01"...
+intel-06-4f-01: model 'GenuineIntel 06-4f-01', path ' intel-ucode/06-4f-01', kvers ' 4.17.0 3.10.0-894 3.10.0-862.6.1 3.10.0-693.35.1 3.10.0-514.52.1 3.10.0-327.70.1 2.6.32-754.1.1 2.6.32-573.58.1 2.6.32-504.71.1 2.6.32-431.90.1 2.6.32-358.90.1'
+intel-06-4f-01: blacklist ''
+intel-06-4f-01: caveat is disabled in configuration
+dracut:     microcode_ctl: kernel version "4.18.0-193.el8.x86_64" failed early load check for "intel-06-4f-01", skipping
+dracut:     microcode_ctl: processing data directory  "/usr/share/microcode_ctl/ucode_with_caveats/intel-06-55-04"...
+intel-06-55-04: model 'GenuineIntel 06-55-04', path ' intel-ucode/06-55-04', kvers ''
+intel-06-55-04: blacklist ''
+intel-06-55-04: caveat is disabled in configuration
+dracut:     microcode_ctl: kernel version "4.18.0-193.el8.x86_64" failed early load check for "intel-06-55-04", skipping
+dracut:     microcode_ctl: final fw_dir: "/usr/share/microcode_ctl/ucode_with_caveats/intel /lib/firmware/updates /lib/firmware"
+dracut: *** Including module: shutdown ***
+dracut: *** Including modules done ***
+dracut: *** Installing kernel module dependencies ***
+dracut: *** Installing kernel module dependencies done ***
+dracut: *** Resolving executable dependencies ***
+dracut: *** Resolving executable dependencies done***
+dracut: *** Hardlinking files ***
+dracut: *** Hardlinking files done ***
+dracut: Could not find 'strip'. Not stripping the initramfs.
+dracut: *** Generating early-microcode cpio image ***
+dracut: *** Constructing GenuineIntel.bin ****
+dracut: *** Constructing GenuineIntel.bin ****
+dracut: *** Store current command line parameters ***
+dracut: *** Creating image file '/boot/initramfs-4.18.0-193.el8.x86_64.img' ***
+dracut: *** Creating initramfs image file '/boot/initramfs-4.18.0-193.el8.x86_64.img' done ***
+]0;root@localhost:~[root@localhost ~]# lsni[K[Kinitd[Krd -m /boot/initramfs-$(unma[K[Kame -r).img | grep test
+]0;root@localhost:~[root@localhost ~]# lsinitrd -m /boot/initramfs-$(uname -r).img | grep test[K[K[K[K[K[K[K[K[K[K[K
+Image: /boot/initramfs-4.18.0-193.el8.x86_64.img: 27M
+========================================================================
+Early CPIO image
+========================================================================
+drwxr-xr-x   3 root     root            0 Apr 23  2020 .
+-rw-r--r--   1 root     root            2 Apr 23  2020 early_cpio
+drwxr-xr-x   3 root     root            0 Apr 23  2020 kernel
+drwxr-xr-x   3 root     root            0 Apr 23  2020 kernel/x86
+drwxr-xr-x   2 root     root            0 Apr 23  2020 kernel/x86/microcode
+-rw-r--r--   1 root     root        99328 Apr 23  2020 kernel/x86/microcode/GenuineIntel.bin
+========================================================================
+Version: dracut-049-70.git20200228.el8
+
+dracut modules:
+bash
+systemd
+systemd-initrd
+rngd
+i18n
+network-legacy
+network
+ifcfg
+prefixdevname
+dm
+kernel-modules
+kernel-modules-extra
+kernel-network-modules
+lvm
+resume
+rootfs-block
+terminfo
+udev-rules
+biosdevname
+dracut-systemd
+usrmount
+base
+fs-lib
+microcode_ctl-fw_dir_override
+shutdown
+========================================================================
+]0;root@localhost:~[root@localhost ~]# [K[root@localhost ~]# [K[root@localhost ~]# ls /usr/lis[Kbd[K/dracut/modules.d/
+00bash/                          05busybox/                       50plymouth/                      90kernel-network-modules/        95debug/                         95ssh-client/                    98usrmount/
+00systemd/                       06rngd/                          71prefixdevname/                 90lvm/                           95fcoe/                          95terminfo/                      99base/
+00warpclock/                     10i18n/                          71prefixdevname-tools/           90mdraid/                        95fcoe-uefi/                     95udev-rules/                    99earlykdump/
+01fips/                          30convertfs/                     80lvmmerge/                      90multipath/                     95fstab-sys/                     95virtfs/                        99fs-lib/
+01systemd-initrd/                35network-legacy/                90btrfs/                         90qemu/                          95iscsi/                         97biosdevname/                   99kdumpbase/
+01test/                          35network-manager/               90crypt/                         90qemu-net/                      95lunmask/                       98dracut-systemd/                99microcode_ctl-fw_dir_override/
+02systemd-networkd/              40network/                       90dm/                            90stratis/                       95nbd/                           98ecryptfs/                      99shutdown/
+03modsign/                       45ifcfg/                         90dmraid/                        91crypt-gpg/                     95nfs/                           98pollcdrom/                     99squash/
+03rescue/                        45url-lib/                       90kernel-modules/                91crypt-loop/                    95resume/                        98selinux/                       99uefi-lib/
+04watchdog/                      50drm/                           90kernel-modules-extra/          95cifs/                          95rootfs-block/                  98syslog/                        
+[root@localhost ~]# ls /usr/lib/dracut/modules.d/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P /usr/lib/dracut/modules.d/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cc /usr/lib/dracut/modules.d/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cd /usr/lib/dracut/modules.d/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+]0;root@localhost:/usr/lib/dracut/modules.d[root@localhost modules.d]# cd ./te[K[K01test/
+]0;root@localhost:/usr/lib/dracut/modules.d/01test[root@localhost 01test]# clear
+[3J[H[2J]0;root@localhost:/usr/lib/dracut/modules.d/01test[root@localhost 01test]# ls
+]0;root@localhost:/usr/lib/dracut/modules.d/01test[root@localhost 01test]# ls
+]0;root@localhost:/usr/lib/dracut/modules.d/01test[root@localhost 01test]# ls -la
+total 4
+drwxr-xr-x.  2 root root    6 Nov 24 11:31 [0m[38;5;33m.[0m
+drwxr-xr-x. 71 root root 4096 Nov 24 11:31 [38;5;33m..[0m
+]0;root@localhost:/usr/lib/dracut/modules.d/01test[root@localhost 01test]# find mv /[K./*.sh ./
+find: ‘mv’: No such file or directory
+find: ‘./*.sh’: No such file or directory
+./
+]0;root@localhost:/usr/lib/dracut/modules.d/01test[root@localhost 01test]# mv ./* ./. ./s ./h ./
+mv: cannot stat './*.sh': No such file or directory
+]0;root@localhost:/usr/lib/dracut/modules.d/01test[root@localhost 01test]# clear
+[3J[H[2J]0;root@localhost:/usr/lib/dracut/modules.d/01test[root@localhost 01test]# mv ~/.[K*.sh ./
+]0;root@localhost:/usr/lib/dracut/modules.d/01test[root@localhost 01test]# clear
+[3J[H[2J]0;root@localhost:/usr/lib/dracut/modules.d/01test[root@localhost 01test]# ls
+module-setup.sh  test.sh
+]0;root@localhost:/usr/lib/dracut/modules.d/01test[root@localhost 01test]# cd 
+]0;root@localhost:~[root@localhost ~]# cd [1Plsclearmv ~/*.sh ./[7Pclearmv ./*.sh ./[5@find [C[C[C[C[C[C[C[C[C[C[C[C[11Pls -la[Kcleard ./01test//usr/lib/dracut/modules.d/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clsinitrd -m /boot/initramfs-$(uname -r).img | grep test
+]0;root@localhost:~[root@localhost ~]# lsinitrd -m /boot/initramfs-$(uname -r).img | grep test[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd [K[1Plsclearmv ~/*.sh ./[7Pclearmv ./*.sh ./[5@find [C[C[C[C[C[C[C[C[C[C[C[C[11Pls -la[Kcleard ./01test//usr/lib/dracut/modules.d/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clsinitrd -m /boot/initramfs-$(uname -r).img | grep test[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmkinitrd -f -v /boot/initramfs-$(uname -r).img $(uname -r)[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Creboot[Kmkinitrd -f -v /boot/initramfs-$(uname -r).img $(uname -r)
+Creating: target|kernel|dracut args|basicmodules 
+dracut: Executing: /usr/bin/dracut -v -f /boot/initramfs-4.18.0-193.el8.x86_64.img 4.18.0-193.el8.x86_64
+dracut: dracut module 'modsign' will not be installed, because command 'keyctl' could not be found!
+dracut: dracut module 'busybox' will not be installed, because command 'busybox' could not be found!
+dracut: dracut module 'btrfs' will not be installed, because command 'btrfs' could not be found!
+dracut: dracut module 'dmraid' will not be installed, because command 'dmraid' could not be found!
+dracut: dracut module 'mdraid' will not be installed, because command 'mdadm' could not be found!
+dracut: dracut module 'stratis' will not be installed, because command 'stratisd-init' could not be found!
+dracut: dracut module 'cifs' will not be installed, because command 'mount.cifs' could not be found!
+dracut: dracut module 'iscsi' will not be installed, because command 'iscsi-iname' could not be found!
+dracut: dracut module 'iscsi' will not be installed, because command 'iscsiadm' could not be found!
+dracut: dracut module 'iscsi' will not be installed, because command 'iscsid' could not be found!
+dracut: 95nfs: Could not find any command of 'rpcbind portmap'!
+dracut: dracut module 'modsign' will not be installed, because command 'keyctl' could not be found!
+dracut: dracut module 'busybox' will not be installed, because command 'busybox' could not be found!
+dracut: dracut module 'btrfs' will not be installed, because command 'btrfs' could not be found!
+dracut: dracut module 'dmraid' will not be installed, because command 'dmraid' could not be found!
+dracut: dracut module 'mdraid' will not be installed, because command 'mdadm' could not be found!
+dracut: dracut module 'stratis' will not be installed, because command 'stratisd-init' could not be found!
+dracut: dracut module 'cifs' will not be installed, because command 'mount.cifs' could not be found!
+dracut: dracut module 'iscsi' will not be installed, because command 'iscsi-iname' could not be found!
+dracut: dracut module 'iscsi' will not be installed, because command 'iscsiadm' could not be found!
+dracut: dracut module 'iscsi' will not be installed, because command 'iscsid' could not be found!
+dracut: 95nfs: Could not find any command of 'rpcbind portmap'!
+dracut: *** Including module: bash ***
+dracut: *** Including module: systemd ***
+dracut: *** Including module: systemd-initrd ***
+dracut: *** Including module: test ***
+dracut: *** Including module: rngd ***
+dracut: *** Including module: i18n ***
+dracut: *** Including module: network-legacy ***
+dracut: *** Including module: network ***
+dracut: *** Including module: ifcfg ***
+dracut: *** Including module: prefixdevname ***
+dracut: *** Including module: dm ***
+dracut: Skipping udev rule: 64-device-mapper.rules
+dracut: Skipping udev rule: 60-persistent-storage-dm.rules
+dracut: Skipping udev rule: 55-dm.rules
+dracut: *** Including module: kernel-modules ***
+dracut: *** Including module: kernel-modules-extra ***
+dracut: *** Including module: kernel-network-modules ***
+dracut: *** Including module: lvm ***
+dracut: Skipping udev rule: 64-device-mapper.rules
+dracut: Skipping udev rule: 56-lvm.rules
+dracut: Skipping udev rule: 60-persistent-storage-lvm.rules
+dracut: *** Including module: resume ***
+dracut: *** Including module: rootfs-block ***
+dracut: *** Including module: terminfo ***
+dracut: *** Including module: udev-rules ***
+dracut: Skipping udev rule: 91-permissions.rules
+dracut: Skipping udev rule: 80-drivers-modprobe.rules
+dracut: *** Including module: biosdevname ***
+dracut: *** Including module: dracut-systemd ***
+dracut: *** Including module: usrmount ***
+dracut: *** Including module: base ***
+dracut: *** Including module: fs-lib ***
+dracut: *** Including module: microcode_ctl-fw_dir_override ***
+dracut:   microcode_ctl module: mangling fw_dir
+dracut:     microcode_ctl: reset fw_dir to "/lib/firmware/updates /lib/firmware"
+dracut:     microcode_ctl: processing data directory  "/usr/share/microcode_ctl/ucode_with_caveats/intel"...
+intel: model '', path ' intel-ucode/*', kvers ''
+intel: blacklist ''
+dracut:     microcode_ctl: intel: Host-Only mode is enabled and "intel-ucode/06-9e-0a" matches "intel-ucode/*"
+dracut:       microcode_ctl: intel: caveats check for kernel version "4.18.0-193.el8.x86_64" passed, adding "/usr/share/microcode_ctl/ucode_with_caveats/intel" to fw_dir variable
+dracut:     microcode_ctl: processing data directory  "/usr/share/microcode_ctl/ucode_with_caveats/intel-06-2d-07"...
+intel-06-2d-07: model 'GenuineIntel 06-2d-07', path ' intel-ucode/06-2d-07', kvers ''
+intel-06-2d-07: blacklist ''
+intel-06-2d-07: caveat is disabled in configuration
+dracut:     microcode_ctl: kernel version "4.18.0-193.el8.x86_64" failed early load check for "intel-06-2d-07", skipping
+dracut:     microcode_ctl: processing data directory  "/usr/share/microcode_ctl/ucode_with_caveats/intel-06-4f-01"...
+intel-06-4f-01: model 'GenuineIntel 06-4f-01', path ' intel-ucode/06-4f-01', kvers ' 4.17.0 3.10.0-894 3.10.0-862.6.1 3.10.0-693.35.1 3.10.0-514.52.1 3.10.0-327.70.1 2.6.32-754.1.1 2.6.32-573.58.1 2.6.32-504.71.1 2.6.32-431.90.1 2.6.32-358.90.1'
+intel-06-4f-01: blacklist ''
+intel-06-4f-01: caveat is disabled in configuration
+dracut:     microcode_ctl: kernel version "4.18.0-193.el8.x86_64" failed early load check for "intel-06-4f-01", skipping
+dracut:     microcode_ctl: processing data directory  "/usr/share/microcode_ctl/ucode_with_caveats/intel-06-55-04"...
+intel-06-55-04: model 'GenuineIntel 06-55-04', path ' intel-ucode/06-55-04', kvers ''
+intel-06-55-04: blacklist ''
+intel-06-55-04: caveat is disabled in configuration
+dracut:     microcode_ctl: kernel version "4.18.0-193.el8.x86_64" failed early load check for "intel-06-55-04", skipping
+dracut:     microcode_ctl: final fw_dir: "/usr/share/microcode_ctl/ucode_with_caveats/intel /lib/firmware/updates /lib/firmware"
+dracut: *** Including module: shutdown ***
+dracut: *** Including modules done ***
+dracut: *** Installing kernel module dependencies ***
+dracut: *** Installing kernel module dependencies done ***
+dracut: *** Resolving executable dependencies ***
+dracut: *** Resolving executable dependencies done***
+dracut: *** Hardlinking files ***
+dracut: *** Hardlinking files done ***
+dracut: Could not find 'strip'. Not stripping the initramfs.
+dracut: *** Generating early-microcode cpio image ***
+dracut: *** Constructing GenuineIntel.bin ****
+dracut: *** Constructing GenuineIntel.bin ****
+dracut: *** Store current command line parameters ***
+dracut: *** Creating image file '/boot/initramfs-4.18.0-193.el8.x86_64.img' ***
+dracut: *** Creating initramfs image file '/boot/initramfs-4.18.0-193.el8.x86_64.img' done ***
+]0;root@localhost:~[root@localhost ~]# mkinitrd -f -v /boot/initramfs-$(uname -r).img $(uname -r)[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Plsinitrd -m /boot/initramfs-$(uname -r).img | grep test[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd [Klsinitrd -m /boot/initramfs-$(uname -r).img | grep test
+[01;31m[Ktest[m[K
+]0;root@localhost:~[root@localhost ~]# exit
+exit
+
+Script done on 2020-11-24 11:36:02-05:00
