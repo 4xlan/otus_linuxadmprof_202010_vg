@@ -25,5 +25,5 @@
 
 ## Файлы
 
-[Скрипт](./files/script.sh)
+1. [Скрипт](./files/script.sh)
 
