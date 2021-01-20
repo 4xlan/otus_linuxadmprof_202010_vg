@@ -85,6 +85,8 @@
 
         semanage fcontext -a -t named_conf_t "/etc/named/dynamic(/.*)?"
         restorecon -R /etc/named/dynamic
+    
+    > После проверки ДЗ выяснилось, что достаточно было переместить каталог dynamic в /var.
 
 5. Повторяем отправку с клиентской части, ошибок более нет.
 
