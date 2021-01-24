@@ -17,6 +17,8 @@
 
 Конфигурационные файлы:
 
+[Общий каталог с файлами](./cfg)
+
 [Vagrantfile](./cfg/Vagrantfile)
 
 [Playbook](./cfg/nginx.yml)
