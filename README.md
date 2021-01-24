@@ -17,3 +17,4 @@
 | 10 | [Systemd](./lab_10)
 | 11 | [PAM](./lab_11)
 | 12 | [SELinux](./lab_12)
+| 13 | [Ansible](./lab_13)
