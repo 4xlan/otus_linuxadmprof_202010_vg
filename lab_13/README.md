@@ -21,6 +21,6 @@
 
 [Playbook](./cfg/nginx.yml)
 
-[Nginx config](./templates/nginx.conf.j2)
+[Nginx config](./cfg/templates/nginx.conf.j2)
 
 ---
