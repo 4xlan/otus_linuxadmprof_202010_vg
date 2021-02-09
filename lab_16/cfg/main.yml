@@ -26,12 +26,6 @@
       name: rsyslog
       enabled: true
       state: restarted
-  handlers:
-  - name: NGINX enable
-    systemd:
-      name: nginx
-      enabled: yes
-      state: started
 ...
 
 
