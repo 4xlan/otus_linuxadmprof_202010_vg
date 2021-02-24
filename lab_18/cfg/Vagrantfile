@@ -78,6 +78,11 @@ Vagrant.configure("2") do |config|
           if ipconf.size > 4 then # has_key? doesn't work, don't know why.
             box.vm.provision "file", source: "#{boxconfig[:route_path]}#{ipconf[:ifname]}", destination: "/tmp/route-#{ipconf[:ifname]}"
             box.vm.provision "shell", run: "always", inline: "mv /tmp/route-#{ipconf[:ifname]} /etc/sysconfig/network-scripts/"
+            box.vm.provision "file", source: "files/route_crutch.sh", destination: "/tmp/route_crutch.sh"
+            box.vm.provision "shell", run: "always", inline: <<-SHELL
+              systemctl restart network
+              /tmp/route_crutch.sh
+            SHELL
           end
         end
 
