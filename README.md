@@ -26,3 +26,5 @@
 | 19 | [PXE](./lab_19)
 | 20 | [DNS (split-dns)](./lab_20)
 | 21 | [VLAN, бонды](./lab_21)
+| 22 | [Iptables](./lab_22)
+| 23 | [LDAP](./lab_23)
